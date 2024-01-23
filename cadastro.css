@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+    color: white;
+    
+    font-family: sans-serif;
+}
+.Entrar a{
+    color: aquamarine;
+    text-decoration: none;
+}
+
+#login{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.nome input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+}
+
+.email input{
+
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+}
+
+.Senha input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-top: 15px;
+}
+
+.Entrar input{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(134, 243, 134);
+    color: #141414;
+
+}
+
+input::placeholder{
+    color: #b6b6b6;
+}
+
+h1{
+    color: #fafafa;
+}
+
+.caixa{
+    margin-top: 65px;
+}
+
+input:focus{
+outline: none;
+}
+
+
+#login .caixa img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes flutuar{
+    0%{
+      top: 0;
+    }
+    100%{
+      top: 30px;
+    }
+  }
+
+
+
+  

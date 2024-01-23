@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh; 
+    overflow-y: hidde;
+    overflow-x: hidden;
+ 
+    .btn-contato button{
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #00FF08;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 0;
+    }
+
+    .btn-contato  button{
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #00FF08;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 0;
+    }
+}
+
+
+
+
+
+
+
+.flex{
+    display: flex;
+    height: 240px ;
+
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin:0 auto;
+
+}
+
+
+
+.header{
+    padding: 40px 4%;
+
+}
+
+
+
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(86, 86, 86);
+    text-decoration: none;
+    display: inline-block;
+    transition: 2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+header a:hover{
+    color: white;
+    transform: scale(1.05);
+
+}
+
+
+/*Final do cabeçalho */
+
+
+
+/* Começo do main*/
+section.topo-do-site{
+    padding: 40px 4%;
+
+
+}
+
+section > .topo-do-site > .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+.topo-do-site h1{
+    color: white;
+    width: 820px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+
+
+.img-topo{
+    padding-left: 90px;
+}
+
+
+ 
+
+
+
+ span{
+    color: #00ff08;
+    font-size: 60px;
+ }
+ 
+
+ .btn button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    
+
+}
+
+.btn button:hover{
+box-shadow: 0px 0px 8px #00FF08;
+transform: scale(2s);
+
+    
+}
+
+.img{
+    position: relative;
+    right: -650px;
+}
+
+ main .img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+ 
+}
+
+main .neon{
+        position: relative;
+        right: -670px;
+        bottom: -100px;
+        border: #00FF08 5px solid;
+        padding: 25px 50px;
+        text-decoration: none;
+        color: #00FF08;
+        border-radius: 16px;
+        font-size: 35px;
+
+
+        box-shadow: inset 0 0 25px 0 #00FF08, 0 0 25px 0 #00FF08 ;
+        text-shadow: 0 0 6px hsl(0 0% 100% / 0.3), 0 0 25px;
+
+
+    
+    }
+    .neon::before{
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+
+        background: #00FF08;
+        width: 100%;
+        height: 100%;
+
+        transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+        filter: blur(50px);
+   
+
+    }
+
+    .neon::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        box-shadow: 0 0 128px 32px #00FF08;
+        opacity: 0;
+        background-color: #00FF08;
+        z-index: -1;
+        transition: opacity 100ms linear;
+    }
+
+    .neon:hover::before,
+    .neon:hover::after{
+        opacity: 1;
+    }
+
+    .neon:hover{
+        color: black;
+        text-shadow: none;
+    }    
+
+
+    footer{
+        position: relative;
+        top:480px ;
+        padding: 0px 4%;
+        box-shadow: 0 0 40px 10px #ffffff1d;
+    }
+    
+    footer .flex{
+        justify-content: space-between;
+    }
+    
+    .line-footer .btn-social button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 0;
+        background-color: #00FF08;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: .2s;
+    }
+    
+    .line-footer .btn-social{
+        position: relative;
+        top: 50px;}
+    
+    footer .interface .email  {
+            display: flex;       
+            position: relative;
+            top: -100px;
+        
+        }
+    
+        footer .interface .email p img {
+           background-color: #00FF08;
+           position: relative;
+           top: 20px;
+           height: 20px;
+           width: 20px;
+           
+        }
+    
+        footer .interface .email p a{
+            position: relative;
+            padding-top: 20px;
+            top: 15px;
+            color: white;
+            text-decoration:none ;
+            padding-left: 3px;
+        }
+    
+    
+    .borda{
+        border-top: 2px solid #00FF08;
+        
+    }
+

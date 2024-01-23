@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh; 
+    overflow-y: hidde;
+    overflow-x: hidde;}
+ 
+     .btn-contato button{
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #00FF08;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 0;
+        text-decoration: none;
+    }
+    
+    
+
+
+
+
+
+
+
+
+.flex{
+    display: flex;
+    height: 240px ;
+
+    
+
+
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin:0 auto;
+   
+
+}
+
+
+
+.header{
+    padding: 40px 4%;
+
+}
+
+
+
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(86, 86, 86);
+    text-decoration: none;
+    display: inline-block;
+    transition: 2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+header nav.menu-desktop a:hover{
+    color: white;
+    transform: scale(1.05);
+
+}
+
+
+/*Final do cabeçalho */
+  
+/* Estilo do menu mobile*/
+#btn-menu{
+    display: none;
+}
+
+
+.btn-abrir svg{
+    color: #00FF08;
+
+
+}
+
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.627);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.menu-mobile{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+     display: block;
+     
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #00FF08;
+    color: black;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar svg{
+     color: #00FF08;
+     font-size: 40px;    
+}
+
+/* Começo do main*/
+section.topo-do-site{
+    padding: 100px 4%;
+}
+
+
+section.topo-do-site  .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+.topo-do-site h1{
+    color: white;
+    width: 90%;
+    font-size: 40px;
+    line-height: 110%;
+}
+
+
+
+
+ span{
+    color: #00ff08;
+  
+ }
+
+ 
+ 
+
+ .btn button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    text-decoration: none;
+}
+
+  
+  
+
+
+.topo-do-site .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
+/* FOOTER */
+footer{
+    position: relative;
+    top:480px ;
+    padding: 0px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+.line-footer .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.line-footer .btn-social{
+    position: relative;
+    top: 50px;}
+
+footer .interface .email  {
+        display: flex;       
+        position: relative;
+        top: -100px;
+    
+    }
+
+    footer .interface .email p svg {
+       color: #00FF08;
+       position: relative;
+       top: 20px;
+       
+       
+    }
+
+    footer .interface .email p a{
+        position: relative;
+        padding-top: 20px;
+        top: 15px;
+        color: white;
+        text-decoration:none ;
+        padding-left: 3px;
+    }
+
+    footer .interface .email p a:hover{
+        text-decoration: underline;
+    }
+
+
+.borda{
+    border-top: 2px solid #00FF08;
+    
+}
+
+@media screen and (max-width:980px){
+
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+   section.topo-do-site{
+    padding: 80% 8%;
+}
+
+.topo-do-site h1{
+    width: 90%;
+    font-size: 32px;
+    line-height: 110%;
+}
+
+section.topo-do-site  .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+footer .flex{
+    flex-direction: column;
+}
+
+.line-footer .flex .btn-social{
+    position: relative;
+    text-align: right;
+    top: -150px;
+    
+}
+
+#btn-menu{
+    display: flex;
+    padding-right: 5%;
+
+}
+
+}
+
+
+
